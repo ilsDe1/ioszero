@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  text-decoration:none;
+}
+
+h1 {
+  color: #797979;
+}
+
+h2 {
+  color: #797979;
+}
+
+h3 {
+  color: #797979;
+}
+
+a {
+  color: #008DFF;
+}
+
+a:hover {
+	color: black;
+}
+
+p {
+  color: #797979;
+}
+
+
+h4 {
+  color: #797979;
+}
+
+.button {
+    background-color: #e7e7e7;
+    color: black;
+    border: 1px solid #ccc;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	padding: 6px 20px;
+}
+
+.button:hover {
+	background-color: #E0F8F7;
+	border: 1px solid #0066ff;
+}
+
+input {
+	border: 1px solid #ccc;
+}
+
+input:hover {
+	  border: 1px solid #0066ff;
+}
