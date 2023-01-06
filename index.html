@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>ZeroIPA</title>
+    <link rel="stylesheet" type="text/css" href="ioszero.cn"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+	<!--[if lt IE 9]>
+	  <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]--> 
+    <style>
+        h3 {
+            display : inline
+        }
+    </style>
+	    <style>
+			#myInput {
+				background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 搜索按钮 */
+				background-position: 10px 12px; /* 定位搜索按钮 */
+				background-repeat: no-repeat; /* 不重复图片 */
+				width: 85%;
+				font-size: 16px;
+				padding: 12px 20px 12px 40px;
+				border: 1px solid #ddd;
+				margin-bottom: 12px; 
+			}
+			
+			#myTable {
+				border-collapse: collapse; 
+				width: 100%; 
+				border: 1px solid #ddd;
+				font-size: 18px; 
+			}
+			
+			#myTable th, #myTable td {
+				text-align: left;
+				padding: 12px;
+			}
+			
+			#myTable tr {
+				/* 表格添加边框 */
+				border-bottom: 1px solid #ddd; 
+			}
+			
+			#myTable tr.header, #myTable tr:hover {
+				/* 表头及鼠标移动过 tr 时添加背景 */
+				background-color: #f1f1f1;
+			}
+		</style>
+	
+		<script>
+			function myFunction() {
+			  // 声明变量
+			  var input, filter, table, tr, td, i;
+			  input = document.getElementById("myInput");
+			  filter = input.value.toUpperCase();
+			  table = document.getElementById("myTable");
+			  tr = table.getElementsByTagName("tr");
+			
+			  // 循环表格每一行，查找匹配项
+			  for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+				  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+				  } else {
+					tr[i].style.display = "none";
+				  }
+				} 
+			  }
+			}
+		</script>
+  </head>
+  <body>	    <div class="header">
+		<p>
+			<span style="font-size: 25px;">| ZeroIPA</span><span style="font-size: small;">Beta</span><span style="float: right;">天生骄傲!</span>
+		</p>
+	</div>
+	
+	<div class="topnav">
+		<al href="index.html">首页</al>
+		<a href="update.html">更新日志</a>
+	</div>
+	<div class="card">
+	
+    <table id="myTable">
+        <tbody>
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索...">
+            <tr class="header">
+                <th style="width:60%; color: black">软件列表(需要密码的APP密码均为2333):</th>
+            </tr>
+            <tr>
+                <td><center><img src="icon/sglz.png" width="90px" height="90px"></center>
+                    <center><h3>水果忍者[iOS]</h3></center>
+                 <center><a href="https://wwtv.lanzoum.com/irNvB0kb8xng"><button>下载</button></a></center>
+             </td>
+            </tr>
+            <tr>
+                <td><center><img src="icon/tieba.png" width="90px" height="90px"></center>
+                    <center><h3>百度贴吧[iOS]</h3></center>
+                 <center><a href="https://wwtv.lanzoum.com/i2WIr0kb9t5a"><button>下载</button></a></center>
+             </td>
+            </tr>
+            <tr>
+                <td> <center><img src="icon/wyymusic.png" width="100px" height="100px"/></center>
+                    <center><h3>网易云音乐 v2.1.1[Android]</h3></center>
+                    <center><a href="https://wwtv.lanzoum.com/iOwyD0iutx0b"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><img src="icon/minecraft.png" width="100px" height="100px"/></center>
+                    <center><h3>Minecraft PE 0.10.5[Android]</h3></center>
+                    <center><a href="https://wwtv.lanzoum.com/iuHh80id1hid"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><img src="icon/minecraft.png" width="100px" height="100px"/></center>
+                    <center><h3>Minecraft PE 0.8.1[Android]</h3></center>
+                    <center><a href="https://wwtv.lanzoum.com/iFAPG0i9z6aj"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><img src="icon/minecraft.png" width="100px" height="100px"/></center>
+                    <center><h3>Minecraft PE 0.14.3[Android]</h3></center>
+                    <center><a href="https://wwtv.lanzoum.com/ieVEA0i9wtmb"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td> <center><img src="icon/wechat.png" width="90px" height="90px"/></center>
+                    <center><h3>微信 v6.0.4.1[Windows Phone]</h3></center>
+                    <center><a href="https://www.118pan.com/o17256"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><img src="icon/ppllq.png" width="90px" height="90px"/></center>
+                    <center><h3>PP浏览器 v1.06[iOS]</h3></center>
+                    <center><a href="https://zhangzhao.lanzouy.com/i3EXKh51dyf"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><img src="icon/minecraft.png" width="100px" height="100px"/></center>
+                    <center><h3>Minecraft PE 0.13.0[Android]</h3></center>
+                    <center><a href="https://wwtv.lanzoum.com/iKeRA0i3mati"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><img src="icon/minecraft.png" width="100px" height="100px"/></center>
+                    <center><h3>Minecraft PE 0.13.0[iOS]</h3></center>
+                    <center><a href="https://zhangzhao.lanzouy.com/iPdp6kbit9c"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><h3>MT管理器 v2.12.1[Android]</h3></center>
+                    <center><a href="https://wwtv.lanzoum.com/iG49f0iaypkd"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><img src="icon/minecraft.png" width="100px" height="100px"/></center>
+                    <center><h3>Minecraft PE 0.14.2[iOS]</h3></center>
+                    <center><a href="https://zhangzhao.lanzouy.com/iPmyqj2fgbi"><button>下载</button></a></center>
+                    <center><h4><a href="http://www.118pan.com/b1117591">下载IPA文件</a></h4></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><h3>Spotify Music v1.8.1[iOS]</h3></center>
+                    <center><a href="https://zhangzhao.lanzouy.com/iGoaCoxozab"><button>下载</button></a></center>
+                </td>
+            </tr>
+            <tr>
+                <td><center><img src="icon/wyymusic.png" width="100px" height="100px"/></center>
+                    <center><h3>网易云音乐 v2.7.1[iOS]</h3></center>
+                    <center><a href="https://zhangzhao.lanzouf.com/ibfvazc"><button>下载</button></a></center>
+                    <center><h4><a href="http://www.118pan.com/b1117590">下载IPA文件</a></h4></center>
+                    </td>
+            </tr>
+            <tr>
+                <td><center><h3>Android助手[Android]</h3></center>
+                    <center><a href="https://wwtv.lanzoum.com/in8Xb0i3jfsj"><button>下载</button></a></center>                                </td>
+     </tr>
+            <tr>
+                <td><center><img src="icon/qq.png" width="90px" height="90px"/></center>
+                    <center><h3>QQ HD v5.8.8.3445[Android]</h3></center>
+                    <center><a href="https://wwtv.lanzoum.com/iWxkZ0i9xxyd"><button>下载</button></a></center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	</div>
+  <div class="footer">
+  <center><h4>By ZeroIPA</h4></center>
+  <center><h4>2017 - 2023</h4></center>
+  </div>
+  </body>
+</html>
